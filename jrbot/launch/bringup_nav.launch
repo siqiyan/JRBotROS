@@ -1,0 +1,7 @@
+<launch>
+    <node name="banana_jr_base" pkg="jrbot" type="base_node.py" output="screen">
+    </node>
+    <include file="$(find jrbot)/launch/teleop.launch"/>
+    <include file="$(find jrbot)/launch/rplidar_c1.launch"/>
+    <include file="$(find jrbot)/launch/tf.launch"/>
+</launch>

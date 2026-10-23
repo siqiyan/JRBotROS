@@ -1,0 +1,5 @@
+<launch>
+    <node name="banana_jr_base" pkg="jrbot" type="base_node.py" output="screen">
+    </node>
+    <include file="$(find jrbot)/launch/teleop.launch"/>
+</launch>
